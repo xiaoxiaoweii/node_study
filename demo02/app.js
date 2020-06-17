@@ -19,6 +19,6 @@ http.createServer((req, res) => {
     var userinfo = url.parse(req.url,true).query
     console.log(`姓名: ${userinfo.name}--年龄: ${userinfo.age}`);
   }
-  res.end('你好nodejs'); // 结束响应
+  res.end('你好 你好nodejs'); // 结束响应
   // 监听端口
 }).listen(3000);
